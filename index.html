@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookLibrary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-page">
+        <div class="navbar">
+            <div class="logo">
+                <h1>Book<span class="lib">Library</span></h1>
+            </div>
+            <div class="navbar-vertical" id="navt">
+                <nav class="nav">
+                    <ul class="ullist">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="#">Latest</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </nav>
+                <button class="btn">Add Book</button>
+            </div>
+        </div>
+        <div class="menu-img" onclick="toggle()" id="mi"><img src="images/menu.png"></div>
+        <div class="mainrow">
+            <div class="main-content-wrapper">
+                <div class="main-content">
+                    <h2>“A mind needs books as a sword needs a <br> whetstone, if it is to keep its edge.”</h2>
+                    <button class="searchInput">Live and learn and pass it on.</button>
+                    <p>Popular Books: <a href="#">Programming</a>, <a href="#">Motivational</a>, <a href="#">Designing</a>, <a href="#">Comics</a>.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="latest-added">
+        <div class="heading">
+            <h1>All Books</h1>
+            <input type="text" class="searchInput" placeholder="Search Book Name or Description" id="myInput">
+            <select id="categoryFilter">
+                <option value="All">All Categories</option>
+                <option value="Programming">Programming</option>
+                <option value="Motivational">Motivational</option>
+                <option value="Designing">Designing</option>
+                <option value="Comics">Comics</option>
+            </select>
+        </div>
+
+        <div class="latest-row" id="booknamesearch">
+            <!-- Book items will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <div class="borrowing-history">
+        <h2>Borrowing History</h2>
+        <ul id="historyList"></ul>
+    </div>
+
+    <footer>
+        <div class="footerdiv">
+            <hr>
+            <h5>copyright © 2024 Shubhadeep Nandi</h5>
+        </div>
+    </footer>
+
+    <script src="Freelibrary.js"></script>
+</body>
+</html>
